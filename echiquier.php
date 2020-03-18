@@ -19,7 +19,7 @@
             for ($y = 0; $y < 8; $y++) {
 
                 if ($x ==7) {
-                    if (($x % 2 == 0 && $y % 2 == 0) || ($x % 2 != 0 && $y % 2 != 0)) {
+                    if ( $y % 2 != 0) {
                         echo "<div class='case blanche'><p> $piece[$y] BLANC <p>
                    
                  </div>";
@@ -30,7 +30,7 @@
                     }
                 }
                 if ($x ==6) {
-                    if (($x % 2 == 0 && $y % 2 == 0) || ($x % 2 != 0 && $y % 2 != 0)) {
+                    if ($y % 2 == 0)  {
                         echo "<div class='case blanche'><p>  pion BLANC <p>
                        
                      </div>";
@@ -52,7 +52,7 @@
                     }
                 }
                 if ($x==1) {
-                    if (($x % 2 == 0 && $y % 2 == 0) || ($x % 2 != 0 && $y % 2 != 0)) {
+                    if ($y % 2 != 0) {
                         echo "<div class='case blanche'><p>  pion NOIR<p>
                    
                  </div>";
@@ -63,7 +63,7 @@
                     }
                 }
                 if ($x==0) {
-                    if (($x % 2 == 0 && $y % 2 == 0) || ($x % 2 != 0 && $y % 2 != 0)) {
+                    if ( $y % 2 == 0) {
                         echo "<div class='case blanche'><p>  $piece[$y] NOIR<p>
                    
                  </div>";
