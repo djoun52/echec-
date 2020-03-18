@@ -18,24 +18,24 @@
         for ($x = 0; $x <= 8; $x++) {
             for ($y = 0; $y < 8; $y++) {
 
-                if ($x < 8 && $x > 6) {
+                if ($x ==7) {
                     if (($x % 2 == 0 && $y % 2 == 0) || ($x % 2 != 0 && $y % 2 != 0)) {
-                        echo "<div class='case blanche'><p> $piece[$y] Blanc<p>
+                        echo "<div class='case blanche'><p> $piece[$y] BLANC <p>
                    
                  </div>";
                     } else {
-                        echo "<div class='case noir'><p> $piece[$y] Blanc <p>
+                        echo "<div class='case noir'><p> $piece[$y] BLANC <p>
                   
                  </div>";
                     }
                 }
-                if ($x < 7 && $x > 5) {
+                if ($x ==6) {
                     if (($x % 2 == 0 && $y % 2 == 0) || ($x % 2 != 0 && $y % 2 != 0)) {
-                        echo "<div class='case blanche'><p>  pion Blanc <p>
+                        echo "<div class='case blanche'><p>  pion BLANC <p>
                        
                      </div>";
                     } else {
-                        echo "<div class='case noir'><p>  pion Blanc<p>
+                        echo "<div class='case noir'><p>  pion BLANC<p>
                       
                      </div>";
                     }
@@ -51,7 +51,7 @@
                  </div>";
                     }
                 }
-                if ($x < 2 && $x > 0) {
+                if ($x==1) {
                     if (($x % 2 == 0 && $y % 2 == 0) || ($x % 2 != 0 && $y % 2 != 0)) {
                         echo "<div class='case blanche'><p>  pion NOIR<p>
                    
@@ -62,7 +62,7 @@
                  </div>";
                     }
                 }
-                if ($x < 1) {
+                if ($x==0) {
                     if (($x % 2 == 0 && $y % 2 == 0) || ($x % 2 != 0 && $y % 2 != 0)) {
                         echo "<div class='case blanche'><p>  $piece[$y] NOIR<p>
                    
