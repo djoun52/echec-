@@ -1,5 +1,5 @@
    
-   * {
+ * {
     box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@ body{
    .case {
     width: 12.5%;
     height: 12.5%;
-    border: 1px solid grey;
+    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
